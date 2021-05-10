@@ -1,0 +1,32 @@
+body{
+	min-height: 200vh;
+}
+
+
+
+nav{
+	position: fixed;
+}
+
+nav > *{
+	position: relative;
+	display: inline-block;
+	transition: top 2s;
+}
+
+
+nav > *:first-child{
+	top: -5em;
+}
+nav > *:not(*:first-child){
+	top: 0;
+}
+
+
+
+body.scrolled nav > *:first-child{
+	top: 0;
+}
+body.scrolled nav > *:not(*:first-child){
+	top: -5em;
+}
